@@ -1,0 +1,45 @@
+{
+    "name": "sfdc-portfolio",
+    "description": "My amazing LWC app",
+    "version": "0.0.1",
+    "author": "panchalravi004",
+    "bugs": "https://github.com/panchalravi004/sfdc-portfolio/issues",
+    "dependencies": {
+        "compression": "^1.7.5",
+        "express": "^4.21.2",
+        "helmet": "^8.0.0"
+    },
+    "engines": {
+        "node": ">=10.13.0",
+        "npm": ">=6.4.1",
+        "yarn": ">=1.9.4"
+    },
+    "homepage": "https://github.com/panchalravi004/sfdc-portfolio",
+    "keywords": [
+        "lwc"
+    ],
+    "license": "MIT",
+    "repository": "panchalravi004/sfdc-portfolio",
+    "scripts": {
+        "build": "lwc-services build -m production -b rollup",
+        "build:development": "lwc-services build -b rollup",
+        "lint": "eslint ./src/**/*.js",
+        "postinstall": "husky install",
+        "precommit": "npm run prettier:verify && [ $? -eq 0 ] && npm run lint",
+        "prettier": "prettier --write \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
+        "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
+        "start": "node scripts/server.js",
+        "test:unit": "lwc-services test:unit",
+        "test:unit:coverage": "lwc-services test:unit --coverage",
+        "test:unit:debug": "lwc-services test:unit --debug",
+        "test:unit:watch": "lwc-services test:unit --watch",
+        "watch": "lwc-services watch -b rollup"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-plugin-inclusive-language": "^2.2.1",
+        "husky": "^9.1.7",
+        "lwc-services": "^3.2.2",
+        "prettier": "^3.4.2"
+    }
+}
