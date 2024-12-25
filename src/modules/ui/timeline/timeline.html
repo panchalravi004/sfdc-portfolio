@@ -1,0 +1,51 @@
+<template>
+    <ul class="slds-timeline">
+        <template for:each={timeline} for:item="timeEntry">
+            <li key={timeEntry.name}>
+                <div class="slds-timeline__item_expandable slds-timeline__item_call slds-is-open">
+                    <span class="slds-assistive-text">{timeEntry.name}</span>
+                    <div class="slds-media">
+                        <div class="slds-media__figure">
+                            <div class="slds-icon_container slds-timeline__icon slds-m-left_large slds-p-around_xx-small"
+                                title={timeEntry.name} style="background-color: #eef4ff;">
+                                <i class={iconName}></i>
+                                <!-- <lightning-icon size="small" icon-name={iconName} class="invertIcon">
+                                </lightning-icon> -->
+                            </div>
+                        </div>
+                        <div class="slds-media__body">
+                            <div class="slds-grid slds-grid_align-spread slds-m-around_xx-small">
+                                <div
+                                    class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                    <h3 class="slds-truncate" title={timeEntry.name}>
+                                        <a href={timeEntry.link}>
+                                            <strong>{timeEntry.from} - {timeEntry.to}</strong>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <article class="slds-box slds-box_x-small">
+                                <div class="slds-no-flex">
+                                    <h2><strong class="slds-text-heading_small">{timeEntry.name}</strong></h2>
+                                </div>
+                                <p class="slds-p-top_xx-small slds-text">
+                                    <!-- <lightning-icon size="xx-small" icon-name="utility:user"></lightning-icon> -->
+                                    &nbsp;{timeEntry.title}
+                                </p>
+                                <template if:true={timeEntry.location}>
+                                    <p class="slds-p-top_xx-small slds-text">
+                                        <!-- <lightning-icon size="xx-small" icon-name="utility:world"></lightning-icon> -->
+                                        &nbsp;{timeEntry.location}
+                                    </p>
+                                </template>
+                                <template if:true={timeEntry.description}>
+                                    <p class="slds-p-top_xx-small slds-text">{timeEntry.description}</p>
+                                </template>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </template>
+    </ul>
+</template>
