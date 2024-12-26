@@ -1,6 +1,6 @@
 {
     "name": "sfdc-portfolio",
-    "description": "My amazing LWC app",
+    "description": "My Salesforce Portfolio",
     "version": "0.0.1",
     "author": "panchalravi004",
     "bugs": "https://github.com/panchalravi004/sfdc-portfolio/issues",
@@ -33,7 +33,8 @@
         "test:unit:coverage": "lwc-services test:unit --coverage",
         "test:unit:debug": "lwc-services test:unit --debug",
         "test:unit:watch": "lwc-services test:unit --watch",
-        "watch": "lwc-services watch -b rollup"
+        "watch": "lwc-services watch -b rollup",
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
         "eslint": "^7.32.0",
