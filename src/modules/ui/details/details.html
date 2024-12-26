@@ -1,14 +1,17 @@
 <template>
     <div class="slds-box slds-box_small slds-m-around_x-small slds-card mainbox baseL1">
         <div class="slds-align_absolute-center">
-            <img class="profilePic" src={githubProfile.avatar_url}></img>
+            <img class="profilePic" src={detail.avatar_url}></img>
         </div>
         <div class="slds-align_absolute-center">
-            <div class="slds-text-heading_medium slds-align_absolute-center">{githubProfile.name}</div>
+            <div class="slds-text-heading_medium slds-align_absolute-center">{detail.name}</div>
         </div>
         <div class="slds-text">
             <div>
-                {githubProfile.bio}
+                {detail.bio}
+            </div>
+            <div>
+                {detail.location}
             </div>
             <div class="slds-align_absolute-center slds-m-top_x-small">
                 <ui-social social={social}></ui-social>

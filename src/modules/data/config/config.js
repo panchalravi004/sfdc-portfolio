@@ -3,6 +3,12 @@ const config = {
 		name: 'Ravi Panchal',
 		menu: ['ABOUT','SKILLS','EXPERIENCE','PROJECTS','CERTIFICATES','EDUCATION']
 	},
+	detail: {
+		name: 'Ravi Panchal',
+		bio: 'Salesforce Developer',
+		location: 'Gujarat, India',
+		avatar_url: 'https://profile.digital.salesforce.com/images/p/0058W00000BEIEMQA5/1734358401/F'
+	},
 	github: {
 		username: 'panchalravi004', // Your GitHub org/user name. (Required)
 		sortBy: 'stars', // stars | updated
@@ -41,7 +47,7 @@ const config = {
 			to: 'December 2024',
 			link: 'https://kriit.com/',
 			location: 'Gujarat, India',
-			description: 'Working as a Salesforce developer.'
+			description: 'Worked as a Salesforce developer.'
 		},
 		{
 			name: 'Trainee Salesforce Engineer',
@@ -124,17 +130,16 @@ const config = {
 	// To hide the `My Projects` section, keep it empty.
 	projects: [
 		{
-			title: 'Salesforce Header Creator',
-			description:
-				'Instant Header Creator for LinkedIn and Twitter to show off your certifications and badges',
-			imageUrl: 'https://www.superqbit.com/resources/images/logo.svg',
-			link: 'https://www.superqbit.com/app?id=SalesforceHeaderCreator',
+			title: 'StreamForce Conference Calling',
+			description: 'Conference calling app using WebRTC on digital experience site.',
+			imageUrl: './resources/images/project/streamforce-sfdc.png',
+			link: '',
 		},
 		{
-			title: 'Salesforce Trailblazer Leaderboard',
-			description: 'Salesforce Trailblazer Leaderboard syncing Trailhead modules, certification, points in realtime',
-			imageUrl: 'https://www.superqbit.com/resources/images/logo.svg',
-			link: 'https://www.superqbit.com/app?id=trailhead-leaderboard',
+			title: 'Twillio Bulk Messaging',
+			description: 'Using custom template send bulk message on specific record or using CSV file based on criteria.',
+			imageUrl: './resources/images/project/twillio-sfdc.png',
+			link: '',
 		},
 	],
 	themeConfig: {
